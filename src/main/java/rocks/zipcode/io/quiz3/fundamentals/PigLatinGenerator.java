@@ -1,18 +1,19 @@
 package rocks.zipcode.io.quiz3.fundamentals;
 
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 /**
  * @author leon on 09/12/2018.
  */
 public class PigLatinGenerator {
 
-
-
     public String translate(String str) {
-
         char a = 'a';
         char e = 'e';
         char i = 'i';
@@ -37,5 +38,6 @@ public class PigLatinGenerator {
         return str;
     }
 }
+
 
 
