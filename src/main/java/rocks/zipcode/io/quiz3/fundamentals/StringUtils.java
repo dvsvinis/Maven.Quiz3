@@ -19,14 +19,24 @@ public class StringUtils {
 
 
     public static Boolean isCharacterAtIndex(String baseString, Character characterToCheckFor, Integer indexOfString) {
-        return null;
+
+         return  baseString.charAt(indexOfString) == characterToCheckFor;
     }
 
     public static String[] getAllSubStrings(String string) {
-        return null;
+        List<String> result = new ArrayList<>();
+        for (int i = 0; i < string.length(); i++) {
+            for (int j = i + 1; j <= string.length(); j++) {
+                // Get each substring
+                result.add(string.substring(i, j));
+            }
+        }
+        String[] allSubStrings = result.toArray(new String[0]);
+        return allSubStrings;
     }
 
+
     public static Integer getNumberOfSubStrings(String input){
-        return null;
+        return getAllSubStrings(input).length-1;
     }
 }

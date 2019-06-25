@@ -25,6 +25,7 @@ public class GetAllSubStrings {
                 "ell",
                 "ello",
                 "l",
+                "l",
                 "ll",
                 "llo",
                 "lo",
